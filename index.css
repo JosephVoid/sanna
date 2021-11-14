@@ -1,0 +1,144 @@
+:root {
+    --primary: #b41c0b;
+    --dark: #202020;
+    --bg-white: #F2F6F7;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Encode Sans', sans-serif !important;
+    color: var(--dark);
+    margin: 0;
+    background-color: var(--bg-white);
+}
+
+section {
+    min-height: 100vh;
+    display: grid;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/* -----------------------HOME SECTION--------------------------- */
+
+.home-section {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "intro-text intro-text intro-text intro-pic intro-pic";
+}
+
+.intro-text {
+    grid-area: intro-text;
+    background-image: linear-gradient(to top right, #DEE8EF , #F2F6F7);
+}
+
+.intro-pic {
+    grid-area: intro-pic;
+    background-image: url('assets/main.jpg');
+    background-size: cover;
+}
+
+/* -----------------------ABOUT US SECTION--------------------------- */
+
+.about-us-section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "about-pic about-text about-text about-text";
+}
+
+.about-us-pic {
+    grid-area: about-pic;
+}
+
+.about-us-text {
+    grid-area: about-text;
+}
+
+/* -----------------------TEAM SECTION--------------------------- */
+
+.team-section {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "team-header"
+    "team-pic"
+    "team-pic"
+    "team-pic";
+}
+
+.team-header {
+    grid-area: team-header;
+}
+
+.team-pic {
+    grid-area: team-pic;
+}
+
+/* -----------------------MENU SECTION--------------------------- */
+
+.menu-section {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "menu-header"
+    "menu-pic"
+    "menu-pic";
+}
+
+.menu-header {
+    grid-area: menu-header;
+}
+
+.menu-pic {
+    grid-area: menu-pic;
+}
+
+/* -----------------------RESERVATION SECTION--------------------------- */
+
+.res-section {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "res-header"
+    "res-call"
+    "res-time";
+}
+
+.res-header {
+    grid-area: res-header;
+}
+
+.res-call {
+    grid-area: res-call;
+}
+
+.res-time {
+    grid-area: res-time;
+}
+
+/* -----------------------FOOTER SECTION--------------------------- */
+
+footer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "find-us    about-us-foot    contact-us    follow-us";
+}
+
