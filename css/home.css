@@ -1,0 +1,46 @@
+/* -----------------------HOME SECTION--------------------------- */
+
+.home-section {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "intro-text intro-text intro-text intro-pic intro-pic";
+}
+
+.intro-text {
+    grid-area: intro-text;
+    background-image: linear-gradient(to top right, #DEE8EF , #F2F6F7);
+}
+    .intro-text .content {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .intro-text .logo-img {
+        width: 15%;
+        height: 15%;
+    }
+    .intro-text .social {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 12rem;
+    }
+    .intro-text span {
+        color: var(--primary);
+        margin-right: 5px;
+    }
+    .intro-text a {
+        text-decoration: none;
+        color: var(--dark);
+    }
+    .intro-text .title {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 5rem;
+        letter-spacing: 3px;
+        padding: 2rem 7rem;
+        line-height: 5.5rem;
+    }
+.intro-pic {
+    grid-area: intro-pic;
+    background-image: url('../assets/main.jpg');
+    background-size: cover;
+}

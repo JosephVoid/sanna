@@ -1,0 +1,35 @@
+/* -----------------------TEAM SECTION--------------------------- */
+
+.team-section {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "team-header"
+    "team-pic"
+    "team-pic"
+    "team-pic";
+}
+
+.team-header {
+    grid-area: team-header;
+    text-align: center;
+    padding: 2rem;
+}
+
+    .team-header span {
+        color: var(--primary);
+    }
+    .team-header .title {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        line-height: 4rem;
+        margin: 0;
+        padding: 1rem;
+    }
+
+.team-pic {
+    grid-area: team-pic;
+    background-image: url('../assets/team.jpg');
+    background-size: cover;
+}
