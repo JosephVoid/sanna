@@ -1,13 +1,12 @@
 /* -----------------------TEAM SECTION--------------------------- */
 
 .team-section {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-    "team-header"
-    "team-pic"
-    "team-pic"
-    "team-pic";
+    "team-text t-pic-1 t-pic-2 t-pic-3 t-pic-3 t-pic-3"
+    "team-text t-pic-4 t-pic-2 t-pic-3 t-pic-3 t-pic-3"
+    "team-text t-pic-4 t-pic-5 t-pic-3 t-pic-3 t-pic-3";
 }
 
 .team-header {
@@ -28,8 +27,48 @@
         padding: 1rem;
     }
 
-.team-pic {
-    grid-area: team-pic;
-    background-image: url('../assets/team.jpg');
+.team-text {
+    grid-area: team-text;
+    position: relative;
+}
+.team-text p {
+    width: max-content;
+    position: absolute;
+    top: 45%;
+    left: -10%;
+    transform-origin: 0 0;
+    transform: rotate(270deg) translate(-40%, 90%);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+.t-pic-2 {
+    grid-area: t-pic-2;
+    background-image: url('../assets/staff\ pic\ 4.jpg');
     background-size: cover;
+    background-position: center;
+}
+.t-pic-3 {
+    grid-area: t-pic-3;
+    background-image: url('../assets/staff\ pic\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.t-pic-1 {
+    grid-area: t-pic-1;
+    background-image: url('../assets/staff\ pic\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.t-pic-4 {
+    grid-area: t-pic-4;
+    background-image: url('../assets/staff\ pic\ 5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.t-pic-5 {
+    grid-area: t-pic-5;
+    background-image: url('../assets/staff\ pic\ 3.jpg');
+    background-size: cover;
+    background-position: center;
 }

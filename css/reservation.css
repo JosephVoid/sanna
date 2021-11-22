@@ -7,8 +7,9 @@
     "res-header"
     "res-call"
     "res-time";
-    background: url('../assets/reserve.jpg');
+    background: url('../assets/reserve\ pic.jpg');
     background-size: cover;
+    background-position: bottom;
 }
 
 .overlay {

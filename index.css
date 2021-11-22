@@ -30,7 +30,7 @@ section {
 
 .navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 1.5rem;
 }
@@ -42,6 +42,8 @@ section {
 .navbar a{
     text-decoration: none;
     color: var(--dark);
+    margin-right: 3rem;
+
 }
 
 

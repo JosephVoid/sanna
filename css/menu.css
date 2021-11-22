@@ -104,3 +104,66 @@
             font-size: 2rem;
             line-height: 1.8rem;
         }
+
+
+/* -----------------------------------------MENU SECTION---------------------------- */
+.new-menu-section {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "food-1 food-1 food-3 food-3 food-3 food-text"
+    "food-1 food-1 food-3 food-3 food-3 food-text"
+    "food-2 food-2 food-3 food-3 food-3 food-text"
+    "food-2 food-2 food-3 food-3 food-3 food-menu";
+}
+
+.food-text {
+    grid-area: food-text;
+    position: relative;
+}
+.food-menu {
+    grid-area: food-menu;
+    background-color: var(--primary);
+    display: flex;
+}
+.food-menu p {
+    margin: auto;
+    color: white;
+    font-size: 2rem;
+}
+.food-text p {
+    width: max-content;
+    position: absolute;
+    top: 30%;
+    left: 105%;
+    transform-origin: 0 0;
+    transform: rotate(90deg) translate(-40%, 90%);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+.food-text span {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    font-weight: bold;
+    color: var(--primary);
+}
+.food-1 {
+    grid-area: food-1;
+    background-image: url('../assets/food\ pic\ 3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.food-2 {
+    grid-area: food-2;
+    background-image: url('../assets/food\ pic\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.food-3 {
+    grid-area: food-3;
+    background-image: url('../assets/food\ pic\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+}
