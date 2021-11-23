@@ -37,13 +37,17 @@ section {
 
 .active {
     font-weight: bold;
+    color: var(--primary) !important; 
 }
 
 .navbar a{
     text-decoration: none;
     color: var(--dark);
     margin-right: 3rem;
+}
 
+.navbar a:hover {
+    color: var(--primary);
 }
 
 

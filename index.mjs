@@ -2,6 +2,12 @@ import menu from './menu.mjs';
 
 window.onload = populate();
 
+$(window).scroll(function () {
+    $(".intro-pic").css("background-position","50% " + ($(this).scrollTop() / 2.5) + "px");
+    $(".about-us-pic").css("background-position","50% " + ($(this).scrollTop() / 2.5) + "px");
+    $(".res-section").css("background-position","100% " + ($(this).scrollTop() / 4) + "px");
+});
+
 // Menu selection underlines
 $(".select").click( function () {
     if ( !$(this).hasClass("selected") ) {

@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sanna Yemeni Restaurant</title>
+	<title>Sanaa Restaurant</title>
+	<link rel="icon" href="assets/logo-t.png" type="image/png"/>
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/about.css">
@@ -31,18 +32,18 @@
 				<a href="#reservation">Reserve</a>
 			</div>
 			<div class="content">
-				<img src="assets/placeholder.png" alt="" class="logo-img">
+				<img src="assets/logo-t.png" alt="" class="logo-img">
 				<div class="title">
 					Welcome To Sanna Restaurant
 				</div>
 				<div class="social">
-					<a href="">
+					<a href="https://www.facebook.com/sanaarestaurantaddis/">
 						<span class="fa-brands fa-facebook-f"></span> 10k
 					</a>
 					<a href="">
 						<span class="fa-brands fa-twitter"></span> 10k
 					</a>
-					<a href="">
+					<a href="https://www.instagram.com/explore/locations/1098370107005726/sanaa-restaurant/">
 						<span class="fa-brands fa-instagram"></span> 10k
 					</a>
 				</div>
@@ -98,22 +99,34 @@
 		<div class="team-text">
 			<p>Our Team</p>
 		</div>
-		<div class="t-pic-1"></div>
-		<div class="t-pic-2"></div>
-		<div class="t-pic-3"></div>
-		<div class="t-pic-4"></div>
-		<div class="t-pic-5"></div>
+		<div class="tmp t-pic-1"></div>
+		<div class="tmp t-pic-2"></div>
+		<div class="tmp t-pic-3"></div>
+		<div class="tmp t-pic-4"></div>
+		<div class="tmp t-pic-5"></div>
 	</section>
 	<section class="new-menu-section" id="menu">
 		<div class="food-text">
 			<p>Our Specialties</p>
 		</div>
 		<div class="food-menu">
-			<p>Menu</p>
+			<p><a href="menu.html" style="text-decoration: none;color: white;">Menu</a></p>
 		</div>
-		<div class="food-1"></div>
-		<div class="food-2"></div>
-		<div class="food-3"></div>
+		<div class="food-1">
+			<div class="overlay-food">
+			</div>
+			<p class="single-food-text">Food 1</p>
+		</div>
+		<div class="food-2">
+			<div class="overlay-food">
+			</div>
+			<p class="single-food-text">Food 2</p>
+		</div>
+		<div class="food-3">
+			<div class="overlay-food">
+			</div>
+			<p class="single-food-text">Food 3</p>
+		</div>
 	</section>
 	<section class="res-section" id="reservation">
 		<div class="overlay"></div>
@@ -169,13 +182,13 @@
 		<div class="follow-us">
 			<span style="font-size: 20px;">Follow Us</span>
 			<div class="social">
-				<a href="">
+				<a href="https://www.facebook.com/sanaarestaurantaddis/">
 					<span class="fa-brands fa-facebook-f"></span>
 				</a>
 				<a href="">
 					<span class="fa-brands fa-twitter"></span>
 				</a>
-				<a href="">
+				<a href="https://www.instagram.com/explore/locations/1098370107005726/sanaa-restaurant/">
 					<span class="fa-brands fa-instagram"></span>
 				</a>
 			</div>
@@ -183,7 +196,13 @@
 	</footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
 <script type="module" src="menu.mjs"></script>
 <script type="module" src="index.mjs"></script>
-
+<script>
+	$(window).waitForImages(function() {
+    // All descendant images have loaded, now slide up.
+    //alert("Images loaded");
+});
+</script>
 </html>
