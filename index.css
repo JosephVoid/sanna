@@ -4,6 +4,10 @@
     --bg-white: #F2F6F7;
 }
 
+/* * {
+    outline: 1px dotted red;
+} */
+
 html {
     overflow-y: scroll;
     scroll-snap-type: y proximity;
@@ -50,9 +54,35 @@ section {
     color: var(--primary);
 }
 
+#overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: var(--bg-white);
+}
 
+#overlay img {
+    margin: auto;
+    width: 5%;
+    animation: Loading 1.5s ease;
+    animation-iteration-count: infinite;
+}
 
+@keyframes Loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
+@media screen and (max-width: 480px) {
+    section {
+        scroll-snap-align:unset;
+    }
+}
 
 
 

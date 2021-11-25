@@ -35,3 +35,22 @@
         width: 80%;
         margin-top: 1rem;
     }
+
+    @media screen and (max-width: 480px) {
+        .about-us-section {
+            grid-template-areas: 
+            "about-text about-text about-text about-text";
+        }
+        .about-us-text {
+            padding: 3rem 2rem;
+        }
+        .about-us-text .title {
+            font-size: 2.5rem;
+            width: 80%;
+            line-height: 2.5rem;
+            padding: 1rem 0;
+        }
+        .about-us-text .parag {
+            width: 100%;
+        }
+    }

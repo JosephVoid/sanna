@@ -72,3 +72,29 @@
     background-size: cover;
     background-position: center;
 }
+
+@media screen and (max-width: 480px) {
+    .team-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "team-text"
+        "t-pic-2"
+        "t-pic-2"
+        "t-pic-3"
+        "t-pic-3"
+        "t-pic-3";
+    }
+    .team-text p {
+        position: absolute;
+        transform-origin: 0 0;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}

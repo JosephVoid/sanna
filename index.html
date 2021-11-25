@@ -22,6 +22,9 @@
 </head>
 
 <body>
+	<div id="overlay">
+		<img src="assets/logo-t.png" alt="" srcset="">
+	</div>
 	<section class="home-section" id="home">
 		<div class="intro-text">
 			<div class="navbar">
@@ -197,12 +200,17 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
-<script type="module" src="menu.mjs"></script>
-<script type="module" src="index.mjs"></script>
+<script src="index.js"></script>
 <script>
-	$(window).waitForImages(function() {
-    // All descendant images have loaded, now slide up.
-    //alert("Images loaded");
-});
+	var src = $('.about-us-pic').css('background-image');
+	var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
+
+	var img = new Image();
+	img.onload = function() {
+		$('#overlay').css('display','none');
+	}
+
+	img.src = url;
+	if (img.complete) img.onload();
 </script>
 </html>

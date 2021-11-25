@@ -42,3 +42,29 @@ footer .social a {
     list-style: none;
     margin-bottom: 0.5rem;
 }
+
+@media screen and (max-width: 480px) {
+    footer {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "find-us"
+        "contact-us"
+        "follow-us";
+        scroll-snap-align:unset;
+        padding: 2rem;
+        height: 100vh;
+    }
+    .about-us-foot {
+        display: none;
+    }
+    footer .social {
+        padding: 2rem 3rem;
+    }
+    .follow-us {
+        margin-top: 2rem;
+    }
+    .contact-us {
+        margin-top: 2rem;
+    }
+}

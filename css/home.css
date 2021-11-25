@@ -44,3 +44,30 @@
     background-image: url('../assets/main.jpg');
     background-size: cover;
 }
+
+@media screen and (max-width: 480px) {
+    .home-section {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "intro-text intro-text intro-text intro-text intro-text";
+        height: 100vh;
+    }
+    .intro-text .title {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        padding: 2rem 1rem;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+    .intro-text {
+        height: 100vh;
+    }
+    .intro-text .social {
+        padding: 0 2rem;
+    }
+    .intro-text .logo-img {
+        width: 25%;
+    }
+}

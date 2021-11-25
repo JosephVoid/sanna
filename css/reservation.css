@@ -71,3 +71,28 @@
     z-index: 2;
     padding: 4rem 0;
 }
+
+@media screen and (max-width: 480px) {
+    .res-section {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "res-header"
+        "res-call"
+        "res-call"
+        "res-time";
+    }
+    .res-header .title {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin: 0;
+        padding: 1rem;
+    }
+    .res-section .phn-number {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .res-time {
+        padding: 0rem 1rem;
+    }
+}

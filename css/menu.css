@@ -206,3 +206,32 @@
 .overlay-food:hover + .single-food-text{
     opacity: 1 !important;
 }
+
+@media screen and (max-width: 480px) {
+    .new-menu-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "food-text"
+        "food-1"
+        "food-1"
+        "food-2"
+        "food-2"
+        "food-menu";
+    }
+    .food-text p {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: 0 0;
+        transform: none;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .food-3 {
+        display: none;
+    }
+}
