@@ -2,9 +2,10 @@
 
 .menu-section {
     grid-template-columns: auto;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
     "menu-header"
+    "menu-pic"
     "menu-pic"
     "menu-pic";
 }
@@ -233,5 +234,16 @@
     }
     .food-3 {
         display: none;
+    }
+    .options {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .menu-pic {
+        padding: 0 2rem;
+    }
+    .menu-item {
+        width: 100%;
+        margin: 0 0 2rem 0;
     }
 }

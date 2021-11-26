@@ -1,9 +1,15 @@
+// Insert Menu Items here
+// {
+//     name: `Food Name`,
+//     price: `food price`,
+//     img: `assets/menu/the-image-name.jpg`
+// }
 var menu = {    
     breakfast:[
         {
             name:"Breakfast 1",
             price:350,
-            img:"assets/placeholder.png"
+            img:"assets/menu/salad.jpg"
         },
         {
             name:"Breakfast 2",
@@ -125,3 +131,11 @@ function populate () {
         $("#hd-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p><p class="price">Br '+ val.price +'</p></div>')
     }); 
 }
+
+$("#open").on('click', function(){
+    $(".mob-nav-menu").removeClass("hide");
+})
+
+$("#close").on('click', function(){
+    $(".mob-nav-menu").addClass("hide");
+})
