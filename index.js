@@ -7,114 +7,119 @@
 var menu = {    
     breakfast:[
         {
-            name:"Feta with Banana & Honey",
-            price:350,
+            name:"Reka with eggs",
+            price:300,
             img:"assets/menu/salad.jpg"
         },
         {
-            name:"Feta with Banana & Gishta",
+            name:"Kibda kalawi",
             price:200,
-            img:"assets/placeholder.png"
-        },
-        {
-            name:"Feta with Temer",
-            price:100,
             img:"assets/about.jpeg"
         },
         {
-            name:"Kers",
-            price:100,
-            img:"assets/about.jpeg"
-        },
-        {
-            name:"Eggs with Furn",
-            price:100,
+            name:"Fetira with eggs",
+            price:200,
             img:"assets/about.jpeg"
         },
         {
             name:"Special Ful",
+            price:200,
+            img:"assets/about.jpeg"
+        },
+        {
+            name:"Retib",
+            price:150,
+            img:"assets/about.jpeg"
+        },
+        {
+            name:"Eggs",
             price:100,
             img:"assets/about.jpeg"
         },
         {
-            name:"Ahda Lahn",
-            price:100,
-            img:"assets/about.jpeg"
-        },
-        {
-            name:"Ahda Doro",
-            price:100,
-            img:"assets/about.jpeg"
-        },
-        {
-            name:"Ful Abyan",
-            price:100,
-            img:"assets/about.jpeg"
-        },
-        {
-            name:"Bazalia",
-            price:100,
+            name:"Tibs",
+            price:300,
             img:"assets/about.jpeg"
         },
     ],
     lunchDinner:[
         {
-            name:"Mushekel Furn",
-            price:350,
+            name:"Special Sanaa",
+            price:550,
             img:"assets/placeholder.png"
         },
         {
-            name:"Mugemer with Rice",
+            name:"Mugemer",
             price:200,
             img:"assets/placeholder.png"
         },
         {
-            name:"Mugemer with Safi",
-            price:100,
+            name:"Mofo with Rice",
+            price:550,
             img:"assets/placeholder.png"
         },
         {
-            name:"Salad",
-            price:350,
-            img:"assets/placeholder.png"
-        },
-        {
-            name:"Tibs Be/Merek",
-            price:200,
-            img:"assets/placeholder.png"
-        },
-        {
-            name:"Selta",
-            price:100,
-            img:"assets/placeholder.png"
-        },
-        {
-            name:"Kubz",
-            price:350,
+            name:"Chiken with Rice",
+            price:600,
             img:"assets/placeholder.png"
         },
         {
             name:"Mendi",
-            price:200,
+            price:430,
             img:"assets/placeholder.png"
         },
         {
-            name:"Mofo",
+            name:"Half Special Sanna",
             price:100,
             img:"assets/placeholder.png"
         },
         {
-            name:"Special Tibs",
+            name:"Tibs with Rice",
             price:350,
             img:"assets/placeholder.png"
         },
         {
-            name:"Bamya (Okra Stew)",
-            price:200,
+            name:"Burma Ugule",
+            price:350,
             img:"assets/placeholder.png"
         },
         {
-            name:"Full Rotisserie Chicken",
+            name:"Selta",
+            price:280,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Fahsa",
+            price:300,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Akda with Meat/Chiken",
+            price:300,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Akda Adeni",
+            price:300,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Metbi with Rice",
+            price:550,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"One sheep with Rice",
+            price:550,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Half sheep with Rice",
+            price:250,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Arabian Salad",
             price:100,
             img:"assets/placeholder.png"
         }
@@ -122,41 +127,56 @@ var menu = {
     juice:[
         {
             name:"Papaya Juice",
-            price:350,
-            img:"assets/placeholder.png"
-        },
-        {
-            name:"Burma",
-            price:200,
-            img:"assets/placeholder.png"
-        },
-        {
-            name:"Special Juice",
             price:100,
             img:"assets/placeholder.png"
         },
         {
-            name:"Special Juice with Vitmo",
+            name:"Mango Juice",
+            price:120,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Pineapple Juice",
             price:100,
             img:"assets/placeholder.png"
         },
         {
             name:"Orange Juice",
+            price:120,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Avocado Juice",
             price:100,
             img:"assets/placeholder.png"
-        }
+        },
+        {
+            name:"Temir with Milk",
+            price:120,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Spris Juice",
+            price:120,
+            img:"assets/placeholder.png"
+        },
     ],
-    hotDrinks:[
+    milkshakes:[
         {
             name:"Sanaa Special",
             price:35,
             img:"assets/placeholder.png"
         },
         {
-            name:"Lomi with Ginger/Honey",
+            name:"Milkshake Chocolate",
             price:20,
             img:"assets/placeholder.png"
-        }
+        },
+        {
+            name:"Milkshake Vanilla",
+            price:20,
+            img:"assets/placeholder.png"
+        },
     ]
         
 }
@@ -211,7 +231,7 @@ function populate () {
         // Add to bf-menu
         $("#jc-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p><p class="price">Br '+ val.price +'</p></div>')
     });
-    $.each( menu.hotDrinks, function( key,val ) {
+    $.each( menu.milkshakes, function( key,val ) {
         // Add to bf-menu
         $("#hd-menu").append('<div class="menu-item"><img src="'+ val.img +'" alt="" srcset=""><p class="name">'+ val.name +'</p><p class="price">Br '+ val.price +'</p></div>')
     }); 
