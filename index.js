@@ -7,69 +7,154 @@
 var menu = {    
     breakfast:[
         {
-            name:"Breakfast 1",
+            name:"Feta with Banana & Honey",
             price:350,
             img:"assets/menu/salad.jpg"
         },
         {
-            name:"Breakfast 2",
+            name:"Feta with Banana & Gishta",
             price:200,
             img:"assets/placeholder.png"
         },
         {
-            name:"Breakfast 3",
+            name:"Feta with Temer",
             price:100,
             img:"assets/about.jpeg"
-        }
+        },
+        {
+            name:"Kers",
+            price:100,
+            img:"assets/about.jpeg"
+        },
+        {
+            name:"Eggs with Furn",
+            price:100,
+            img:"assets/about.jpeg"
+        },
+        {
+            name:"Special Ful",
+            price:100,
+            img:"assets/about.jpeg"
+        },
+        {
+            name:"Ahda Lahn",
+            price:100,
+            img:"assets/about.jpeg"
+        },
+        {
+            name:"Ahda Doro",
+            price:100,
+            img:"assets/about.jpeg"
+        },
+        {
+            name:"Ful Abyan",
+            price:100,
+            img:"assets/about.jpeg"
+        },
+        {
+            name:"Bazalia",
+            price:100,
+            img:"assets/about.jpeg"
+        },
     ],
     lunchDinner:[
         {
-            name:"Lunch 1",
+            name:"Mushekel Furn",
             price:350,
             img:"assets/placeholder.png"
         },
         {
-            name:"Dinner 2",
+            name:"Mugemer with Rice",
             price:200,
             img:"assets/placeholder.png"
         },
         {
-            name:"Lunch 3",
+            name:"Mugemer with Safi",
+            price:100,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Salad",
+            price:350,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Tibs Be/Merek",
+            price:200,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Selta",
+            price:100,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Kubz",
+            price:350,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Mendi",
+            price:200,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Mofo",
+            price:100,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Special Tibs",
+            price:350,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Bamya (Okra Stew)",
+            price:200,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Full Rotisserie Chicken",
             price:100,
             img:"assets/placeholder.png"
         }
     ],
     juice:[
         {
-            name:"Juice 1",
+            name:"Papaya Juice",
             price:350,
             img:"assets/placeholder.png"
         },
         {
-            name:"Juice 2",
+            name:"Burma",
             price:200,
             img:"assets/placeholder.png"
         },
         {
-            name:"Juice 3",
+            name:"Special Juice",
+            price:100,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Special Juice with Vitmo",
+            price:100,
+            img:"assets/placeholder.png"
+        },
+        {
+            name:"Orange Juice",
             price:100,
             img:"assets/placeholder.png"
         }
     ],
     hotDrinks:[
         {
-            name:"Hot Drink 1",
+            name:"Sanaa Special",
             price:35,
             img:"assets/placeholder.png"
         },
         {
-            name:"Hot Drink 2",
+            name:"Lomi with Ginger/Honey",
             price:20,
-            img:"assets/placeholder.png"
-        },
-        {
-            name:"Hot Drink 3",
-            price:10,
             img:"assets/placeholder.png"
         }
     ]

@@ -34,6 +34,7 @@
     .about-us-text .parag {
         width: 60%;
         margin-top: 1rem;
+        line-height: 1.45rem;
     }
 
     @media screen and (max-width: 480px) {
